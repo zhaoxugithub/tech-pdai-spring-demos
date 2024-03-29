@@ -10,6 +10,12 @@ import tech.pdai.springframework.service.UserServiceImpl;
 /**
  * @author pdai
  */
+/*
+    开启切面的必要条件：@Aspect, @Bean @EnableAspectJAutoProxy
+    切点：连接点的集合
+    切面：切点(在哪里)+通知(做什么)
+
+ */
 @EnableAspectJAutoProxy
 @Configuration
 public class BeansConfig {
