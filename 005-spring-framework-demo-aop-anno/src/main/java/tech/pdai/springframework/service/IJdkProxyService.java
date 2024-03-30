@@ -7,9 +7,9 @@ package tech.pdai.springframework.service;
  */
 public interface IJdkProxyService {
 
-    void doMethod1();
+  void doMethod1();
 
-    String doMethod2();
+  String doMethod2();
 
-    String doMethod3() throws Exception;
+  String doMethod3() throws Exception;
 }

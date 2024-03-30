@@ -13,6 +13,9 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author pdai
+ *
+ *
+ * 切面的执行顺序： arount  -> before -> 切入点（Method） --> around -> after
  */
 @EnableAspectJAutoProxy
 @Component
@@ -25,7 +28,6 @@ public class LogAspect {
   @Pointcut("execution(* tech.pdai.springframework.service.*.*(..))")
   private void pointCutMethod() {
   }
-
 
   /**
    * 环绕通知.
@@ -79,5 +81,4 @@ public class LogAspect {
   public void doAfter() {
     System.out.println("最终通知");
   }
-
 }
